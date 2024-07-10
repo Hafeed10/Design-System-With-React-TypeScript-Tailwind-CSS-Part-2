@@ -1,12 +1,10 @@
-export 
-type ButtonType = "submit" | "reset" | "button";
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLAnchorElement> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-  type: ButtonType;
+  type: 'ubmit' | 'eset' | 'button';
   className?: string;
-  Children?:React.ReactNode,
-  
+  children?: React.ReactNode;
+  tag?: string;
 }
 
 export default ButtonProps;

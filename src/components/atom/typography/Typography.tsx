@@ -8,7 +8,7 @@ import React from 'react';
 // Define the Typography component
 const Typography: React.FC<TypographyProps> = ({
     text = 'Welcome to Machine',
-    tag: Tag = 'div', // Default to 'div' if no tag is provided
+    tag: Tag = 'h1', // Default to 'div' if no tag is provided
     className,
     style,
     ariaLabel,
